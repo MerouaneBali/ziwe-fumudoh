@@ -1,0 +1,9 @@
+@use '../base/colors' as *;
+
+input {
+  // height: 4em;
+  background: none;
+  border: 0;
+  border-bottom: 2px $light solid;
+//   background-color: silver;
+}

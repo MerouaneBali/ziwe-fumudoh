@@ -1,0 +1,27 @@
+{
+  "name": "ziwe-fumudoh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.37.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MerouaneBali/ziwe-fumudoh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MerouaneBali/ziwe-fumudoh/issues"
+  },
+  "homepage": "https://github.com/MerouaneBali/ziwe-fumudoh#readme"
+}

@@ -1,0 +1,27 @@
+button {
+  border: none;
+  padding: 0.75em 1.25em;
+  margin-top: 1.25em;
+  cursor: pointer;
+  transition: 150ms ease-out;
+  border-radius: 5em;
+}
+button:hover {
+  transform: scale(1.08);
+}
+
+.btn--primary {
+  color: #10151e;
+  background-color: white;
+}
+
+.btn--secondary {
+  color: #10151e;
+  background-color: white;
+}
+
+input {
+  background: none;
+  border: 0;
+  border-bottom: 2px white solid;
+}

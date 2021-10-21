@@ -1,0 +1,603 @@
+@use "../base/colors" as *;
+
+body {
+  overflow-x: hidden;
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  #hero__container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4em;
+      background-image: linear-gradient(to bottom, transparent, $dark 100%);
+    }
+
+    #hero__background {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    #hero__column_1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%) scale(1.4);
+      height: 100vh;
+    }
+
+    #hero__column_2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -75%) scale(1.7);
+      height: 100vh;
+    }
+
+    #hero__ziwe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -35%);
+      height: 120vh;
+    }
+
+    #hero__statues_1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -35%) scale(1.25);
+    }
+
+    #hero__statues_2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -12%) scale(1.3);
+    }
+
+    #hero__title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  #hero__cloud_1 {
+    position: absolute;
+    top: 100%;
+    // left: 50%;
+    transform: translate(-130%, -50%) scale(1.6);
+    animation: cloud-1-enter 1s ease-out forwards;
+
+    @keyframes cloud-1-enter {
+      from {
+        left: 25%;
+        opacity: 0;
+      }
+
+      to {
+        left: 50%;
+        opacity: 1;
+      }
+    }
+  }
+
+  #hero__cloud_2 {
+    position: absolute;
+    top: 100%;
+    // left: 50%;
+    transform: translate(-05%, -85%) scale(1.7);
+    animation: cloud-2-enter 1s ease-out forwards;
+
+    @keyframes cloud-2-enter {
+      from {
+        left: 75%;
+        opacity: 0;
+      }
+
+      to {
+        left: 50%;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#whoami {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 20vh;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    text-align: center;
+
+    * + * {
+      margin-top: 2em;
+    }
+  }
+
+  #whoami__cloud {
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-100%, -50%) scale(1);
+    left: 0%;
+    height: 100vh;
+    transform: translate(-52%, 5%) scale(1.2);
+  }
+
+  #whoami__medusa {
+    position: absolute;
+    top: 50%;
+    right: 12.5%;
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+#works {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  width: 100vw;
+
+  div {
+    width: 60ch;
+    text-align: center;
+
+    * + * {
+      margin-top: 2em;
+    }
+  }
+}
+
+#quotes {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../img/bg_2.png");
+  background-position: center;
+  margin: 60vh 0 25vh 0;
+
+  #quotes__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+
+      h4 {
+        max-width: 50ch;
+
+        span {
+          font-weight: 600;
+          font-family: "Playfair Display SC", serif;
+        }
+      }
+    }
+  }
+
+  #quotes__cloud_1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    // transform: translateY(-50%);
+  }
+
+  #quotes__cloud_2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // transform: translate(-20%, 20%);
+  }
+
+  #quotes__cloud_3 {
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+    // transform: translate(15%);
+    width: 40%;
+  }
+
+  #quotes__cloud_4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // transform: translate(-20%, 50%);
+  }
+
+  #quotes__cloud_5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    // transform: translate(-5%, 40%);
+    width: 80%;
+  }
+
+  #quotes__ribbon_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // transform: translate(5%, 15%) scale(1.7);
+  }
+
+  #quotes__ribbon_2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    // transform: translate(0%, -70%) scale(1.5);
+  }
+
+  .quotes__cherubs {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-10%, 40%);
+  }
+}
+
+#qna {
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgb(116, 101, 80) -35.95%,
+      rgb(16, 22, 31) 98.4%,
+      rgba(1, 27, 35, 0) 98.44%
+    ),
+    linear-gradient(
+      rgb(16, 22, 31) 0%,
+      rgb(16, 22, 31) 100%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  padding: 20% 0;
+  // padding: 10% 0 10% 0;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    transform: translateY(-1em);
+
+    span:first-child {
+      position: relative;
+      top: -0.5em;
+      left: -0.5rem;
+      font-family: "Playfair Display SC", serif;
+    }
+
+    span:last-child {
+      position: relative;
+      top: 0.5em;
+      left: 0.5rem;
+      font-weight: 500;
+    }
+  }
+
+  #qna__container {
+    transform: translateY(-2.5em);
+
+    #qna__grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      width: 50%;
+      position: relative;
+      left: 50%;
+      transform: translate(calc(-50% - 2.5em), 2.5em);
+      column-gap: 5em;
+      margin-top: 3em;
+
+      .qna_grid__side {
+        &:first-child {
+          transform: translateY(-3em);
+        }
+
+        &:last-child {
+          transform: translateY(3em);
+        }
+
+        div + div {
+          margin-top: 7em;
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+
+  height: 80vh;
+  overflow: hidden;
+
+  button {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: transparent;
+    color: $light;
+    border: 2px solid $light;
+    border-radius: 50%;
+    padding: 1.5em;
+  }
+
+  p {
+    position: absolute;
+    left: 50%;
+    // bottom: 7em;
+    top: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+
+    span {
+      text-decoration-line: underline;
+    }
+  }
+
+  #contact_phone_statue {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-140%, -30%);
+  }
+
+  #contact_back_cloud_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -40%) scale(0.7) rotate(5deg);
+  }
+
+  #contact_back_cloud_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -50%) scale(0.5) rotate(60deg);
+  }
+
+  #contact_front_cloud_1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -30%);
+  }
+
+  #contact_front_cloud_2 {
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-85%, -30%) scale(1.5);
+
+    height: 90vh;
+    transform: translate(-52%, 5%) scale(1.2);
+    transform: translate(-52%, 5%) scale(1.2);
+  }
+
+  #contact_front_cloud_3 {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-40%, -30%) scale(0.6);
+  }
+}
+
+.info {
+  position: fixed;
+  cursor: pointer;
+}
+
+#info__logo {
+  top: 2em;
+  left: 2em;
+
+  font-family: "Playfair Display SC", serif;
+  font-weight: 500;
+
+  // * {
+  //   font-family: "Playfair Display SC", serif;
+  // }
+}
+
+// #info__menu {
+//   top: 2em;
+//   right: 2em;
+
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   height: clamp(1rem, 1.25vw, 1.25rem);
+//   width: clamp(2rem, 2.5vw, 2.5rem);
+
+//   &:hover > div:nth-child(odd) {
+//     width: 120%;
+//   }
+
+//   &:hover > div:nth-child(even) {
+//     width: 70%;
+//   }
+
+//   div {
+//     height: 1px;
+//     width: 100%;
+//     background-color: $light;
+//     transition: 0.3s cubic-bezier(0, 0, 0, 1);
+//   }
+// }
+
+#info__developer {
+  bottom: 2em;
+  left: 2em;
+
+  // font-family: "Playfair Display SC", serif;
+  // font-weight: 400;
+
+  span {
+    font-family: "Playfair Display SC", serif;
+    transition: 0.15s ease-out;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom-color: $light;
+    }
+  }
+}
+
+#info__contact {
+  bottom: 2em;
+  right: 2em;
+  // font-size: clamp(1rem, 1.25vw, 1.25rem);
+
+  * + * {
+    padding-left: 1rem;
+  }
+
+  i {
+    transition: 0.15s ease-out;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+#info__music {
+  top: 2em;
+  right: 2em;
+
+  display: flex;
+
+  div {
+    width: 2px;
+    height: 22px;
+    background: rgb(255, 255, 255);
+
+    transform-origin: center bottom;
+
+    transition: all 0.15s ease-in 0s;
+
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+  }
+
+  div:nth-child(1) {
+    animation-name: beat_1;
+
+    @keyframes beat_1 {
+      from {
+        transform: scaleY(0.58);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  div:nth-child(2) {
+    animation-name: beat_2;
+    animation-duration: 0.625s;
+
+    @keyframes beat_2 {
+      from {
+        transform: scaleY(0.4);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  div:nth-child(3) {
+    animation-name: beat_3;
+
+    @keyframes beat_3 {
+      from {
+        transform: scaleY(0.6);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  div:nth-child(4) {
+    animation-name: beat_4;
+    animation-duration: 0.7s;
+
+    @keyframes beat_4 {
+      from {
+        transform: scaleY(0.5);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  div:nth-child(5) {
+    animation-name: beat_5;
+
+    @keyframes beat_5 {
+      from {
+        transform: scaleY(0.3);
+      }
+      to {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  div + div {
+    margin-left: 0.25rem;
+  }
+}
+
+.info__music--playing {
+  div {
+    animation-play-state: running !important;
+    animation-direction: alternate-reverse;
+  }
+}

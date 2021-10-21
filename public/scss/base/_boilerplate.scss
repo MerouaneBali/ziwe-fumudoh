@@ -1,0 +1,39 @@
+@use "./colors" as *;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $light;
+  background-color: $dark;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $dark;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $light;
+  // border-radius: 0.5em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $light;
+}

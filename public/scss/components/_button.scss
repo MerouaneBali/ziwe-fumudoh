@@ -1,0 +1,24 @@
+@use "../base/colors" as *;
+
+button {
+  border: none;
+  padding: 0.75em 1.25em;
+  margin-top: 1.25em;
+  cursor: pointer;
+  transition: 150ms ease-out;
+  border-radius: 5em;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
+
+.btn--primary {
+  color: $dark;
+  background-color: $light;
+}
+
+.btn--secondary {
+  color: $dark;
+  background-color: $light;
+}

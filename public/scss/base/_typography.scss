@@ -1,0 +1,83 @@
+@use "../utils" as *;
+@use "./colors" as *;
+
+h1,
+h2,
+p,
+a {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(4.5rem, 9vw, 9rem);
+  font-weight: 400;
+  color: $light;
+  line-height: 120%;
+
+  // @media screen and (max-width: 900px) {
+  //   margin: 2.5rem auto;
+  // }
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 400;
+  margin: 1em 0;
+  color: $light;
+
+  // @media screen and (max-width: 900px) {
+  //   font-weight: 700;
+  // }
+}
+
+h3 {
+  font-size: clamp(1.125rem, 2.25vw, 2.25rem);
+  font-weight: 400;
+  margin: 1em 0;
+  color: $light;
+
+  // @media screen and (max-width: 900px) {
+  //   font-weight: 700;
+  // }
+}
+
+h4 {
+  font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+  font-weight: 400;
+  margin: 1rem 0;
+  color: $light;
+
+  // @media screen and (max-width: 900px) {
+  //   font-weight: 700;
+  // }
+}
+
+p {
+  font-size: clamp(1rem, 1.25vw, 1.25rem);
+  // font-size: 1.125rem;
+  font-weight: 300;
+  color: $light;
+  //   max-width: 70ch;
+}
+
+a,
+a:visited,
+a:active {
+  font-size: rem(16);
+  font-weight: 700;
+  color: $light;
+}
+
+small {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  // font-size: 1.125rem;
+  font-weight: 400;
+  color: $light;
+  //   max-width: 70ch;
+}
+
+button {
+  font-size: rem(24);
+  font-weight: 400;
+  text-transform: uppercase;
+}
