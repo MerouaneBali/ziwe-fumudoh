@@ -63,9 +63,10 @@ p {
 a,
 a:visited,
 a:active {
-  font-size: rem(16);
-  font-weight: 700;
+  // font-size: rem(16);
+  // font-weight: 700;
   color: $light;
+  text-decoration-line: none;
 }
 
 small {
