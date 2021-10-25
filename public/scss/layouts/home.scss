@@ -415,6 +415,11 @@ body {
     border: 2px solid $light;
     border-radius: 50%;
     padding: 1.5em;
+
+    &:hover {
+      transform-origin: center;
+      transform: translateX(-50%) scale(1.2);
+    }
   }
 
   p {
