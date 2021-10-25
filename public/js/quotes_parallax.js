@@ -2,7 +2,6 @@
 const targets = document.querySelectorAll(".quotes__parallax");
 
 for (const target of targets) {
-  console.log(` ${target.dataset.transform}`);
   target.style.transform = `${target.dataset.transform}`;
 }
 

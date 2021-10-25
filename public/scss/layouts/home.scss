@@ -9,6 +9,10 @@ body {
   height: 100vh;
   width: 100vw;
 
+  @media only screen and (max-width: 600px) {
+    overflow: hidden;
+  }
+
   #hero__container {
     position: relative;
     height: 100%;
@@ -128,6 +132,10 @@ body {
   overflow: hidden;
   margin-top: 20vh;
 
+  @media only screen and (max-width: 600px) {
+    overflow: hidden;
+  }
+
   div {
     position: absolute;
     top: 50%;
@@ -139,6 +147,10 @@ body {
     * + * {
       margin-top: 2em;
     }
+
+    @media only screen and (max-width: 600px) {
+      width: 80%;
+    }
   }
 
   #whoami__cloud {
@@ -149,6 +161,10 @@ body {
     left: 0%;
     height: 100vh;
     transform: translate(-52%, 5%) scale(1.2);
+
+    @media only screen and (max-width: 600px) {
+      transform: translate(-72%, 5%) scale(1.2);
+    }
   }
 
   #whoami__medusa {
@@ -156,6 +172,13 @@ body {
     top: 50%;
     right: 12.5%;
     transform: translateY(-50%) scale(1);
+
+    @media only screen and (max-width: 600px) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -0%);
+      z-index: -1;
+    }
   }
 }
 
@@ -170,12 +193,23 @@ body {
   height: 100vh;
   width: 100vw;
 
+  img {
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+
   div {
     width: 60ch;
     text-align: center;
 
     * + * {
       margin-top: 2em;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      padding: 0 2em;
     }
   }
 }
@@ -187,6 +221,12 @@ body {
   background-image: url("../../img/bg_2.png");
   background-position: center;
   margin: 60vh 0 25vh 0;
+
+  @media only screen and (max-width: 600px) {
+    img {
+      display: none;
+    }
+  }
 
   #quotes__text {
     position: absolute;
@@ -271,6 +311,10 @@ body {
     bottom: 0;
     left: 50%;
     transform: translate(-10%, 40%);
+
+    @media only screen and (max-width: 600px) {
+      transform: translate(-50%, 40%) scale(0.7);
+    }
   }
 }
 
@@ -288,6 +332,10 @@ body {
     );
   padding: 20% 0;
   // padding: 10% 0 10% 0;
+
+  @media only screen and (max-width: 600px) {
+    padding: 10% 0 40% 0;
+  }
 
   h2 {
     width: 100%;
@@ -321,6 +369,15 @@ body {
       transform: translate(calc(-50% - 2.5em), 2.5em);
       column-gap: 5em;
       margin-top: 3em;
+
+      @media only screen and (max-width: 600px) {
+        display: block;
+        width: 100%;
+        transform: none;
+        left: 0;
+        padding: 0 2em;
+        top: 5em;
+      }
 
       .qna_grid__side {
         &:first-child {
@@ -378,6 +435,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-140%, -30%);
+
+    @media only screen and (max-width: 600px) {
+      transform: translate(-50%, -30%) scale(0.5);
+    }
   }
 
   #contact_back_cloud_1 {
@@ -409,7 +470,10 @@ body {
 
     height: 90vh;
     transform: translate(-52%, 5%) scale(1.2);
-    transform: translate(-52%, 5%) scale(1.2);
+
+    @media only screen and (max-width: 600px) {
+      transform: translate(-62%, 5%) scale(1.2);
+    }
   }
 
   #contact_front_cloud_3 {
