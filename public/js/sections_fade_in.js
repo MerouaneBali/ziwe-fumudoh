@@ -79,7 +79,10 @@ gsap.from(".works__text", {
 gsap.from(".qna__text", {
   scrollTrigger: {
     traget: "#qna",
-    start: `${document.querySelector("#qna").offsetTop} top`,
+    start: `${
+      document.querySelector("#qna").offsetTop -
+      document.querySelector("#quotes").clientHeight * 0.2
+    } top`,
     // markers: true,
   },
 
