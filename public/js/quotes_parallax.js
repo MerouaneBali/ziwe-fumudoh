@@ -1,4 +1,3 @@
-
 const targets = document.querySelectorAll(".quotes__parallax");
 
 for (const target of targets) {
